@@ -1,4 +1,7 @@
 <script setup>
+
+import './page-title.scss'
+
 defineProps({
   title: {
     type: String,
