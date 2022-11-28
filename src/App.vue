@@ -33,6 +33,9 @@ const projectCards = [
       }, {
         label: "About",
         description: 'Description about'
+      }, {
+        label: "Extra kjfgjkdfg",
+        description: 'Description about'
       }
     ]
   },
@@ -48,6 +51,30 @@ const projectCards = [
       {
         label: "Role",
         description: 'Description role'
+      }, {
+        label: "Timeline",
+        description: 'Description timeline'
+      }, {
+        label: "Tools",
+        description: 'Description tools'
+      }, {
+        label: "About",
+        description: 'Description about'
+      }
+    ]
+  },
+  {
+    title: "An other project last one",
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
+    image: {
+      url: "https://www.granadahoy.com/2022/08/28/vivir/casa-dragon-Granada-imagenes_1715239244_165068924_667x375.jpg",
+      alt: "Project image alt",
+      position: "left"
+    },
+    listItems: [
+      {
+        label: "Role",
+        description: 'Description role last'
       }, {
         label: "Timeline",
         description: 'Description timeline'
@@ -76,8 +103,9 @@ const projectCards = [
     </section>
     <section class="container">
       <div class="row">
-        <div class="col-12" v-for="projectCard in projectCards">
-          <ProjectCard :listItems="projectCard.listItems"
+        <div class="col-12">
+          <ProjectCard v-for="(projectCard, index)  in projectCards"
+                       :listItems="projectCard.listItems"
                        :title="projectCard.title"
                        :description="projectCard.description"
                        :image="projectCard.image"/>

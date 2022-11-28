@@ -44,7 +44,15 @@ $colors: (
 );
 // scss-docs-end colors-map
 
-
+$hr-margin-y: 6rem;
+$hr-color: red;
+$hr-opacity: 1;
+//$hr-border-width: 10px;
+  //margin: $hr-margin-y 0;
+  //color: $hr-color; // 1
+  //border: 0;
+  //border-top: $hr-border-width solid $hr-border-color;
+  //opacity: $hr-opacity;
 
 
 
