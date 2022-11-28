@@ -1,0 +1,16 @@
+@import "../../../scss/base-components";
+
+.navbar {
+  background-color: $navbar-background-color;
+  height: $navbar-height;
+  .container {
+
+    ul.navbar-nav {
+      li.nav-item {
+          .nav-link {
+            font-family: $font-family-aqala-display;
+          }
+      }
+    }
+  }
+}
