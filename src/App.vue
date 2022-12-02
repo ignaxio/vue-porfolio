@@ -2,6 +2,7 @@
 import NavBar from "./components/organism/navBar/NavBar.vue"
 import MastHead from "./components/organism/mastHead/MastHead.vue";
 import ProjectCard from "./components/organism/projectCard/ProjectCard.vue";
+import Footer from "./components/organism/footer/Footer.vue";
 import './scss/custom.scss'
 
 
@@ -88,6 +89,15 @@ const projectCards = [
     ]
   }
 ];
+
+const footer = {
+  image: {
+    url: "https://www.granadahoy.com/2022/08/28/vivir/casa-dragon-Granada-imagenes_1715239244_165068924_667x375.jpg",
+    alt: "Project image alt"
+  }
+};
+
+
 </script>
 
 <template>
@@ -114,4 +124,5 @@ const projectCards = [
     </section>
 
   </main>
+  <Footer :image="footer.image"/>
 </template>

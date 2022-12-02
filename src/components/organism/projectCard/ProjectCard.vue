@@ -3,6 +3,7 @@ import './project-card.scss'
 
 import ListItem from "../../atoms/listItem/ListItem.vue";
 import Separator from "../../atoms/separator/Separator.vue";
+import Image from "../../atoms/image/Image.vue"
 
 defineProps({
   title: {
@@ -24,7 +25,7 @@ defineProps({
 <template>
   <article class="project-card row" v-if="image.position === 'left'">
     <div class="project-card_image col-12 col-md-6">
-      <img :src="image.url" class="img-fluid" :alt="image.alt">
+      <Image :alt="image.alt" :url="image.url" />
     </div>
     <div class="project-card_body col-12 col-md-6">
       <h3 class="project-card_body--title">{{ title }}</h3>
@@ -48,7 +49,7 @@ defineProps({
       <a href="#" class="btn btn-primary">Case study</a>
     </div>
     <div class="project-card_image col-12 col-md-6 order-1 order-md-2">
-      <img :src="image.url" class="img-fluid" :alt="image.alt">
+      <Image :alt="image.alt" :url="image.url" />
     </div>
   </article>
   <Separator />
