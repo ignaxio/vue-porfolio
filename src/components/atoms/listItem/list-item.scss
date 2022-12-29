@@ -1,1 +1,9 @@
-@import "../../../scss/bootstrap-import";
+@import "../../../scss/base-components";
+
+
+.list-item-label {
+  font-family: $font-family-svarga-regular;
+  font-weight: normal;
+  text-decoration: underline;
+  text-transform: uppercase;
+}

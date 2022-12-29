@@ -13,10 +13,10 @@ defineProps({
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar bg-secondary bg-opacity-50">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img alt="Dana logo" src="../../../assets/logo.svg" width="30" height="24" />
+        <img alt="Dana logo" src="../../../assets/logo.svg" width="55" />
       </a>
       <ul class="navbar-nav">
         <li class="nav-item">

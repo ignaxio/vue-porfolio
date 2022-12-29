@@ -25,7 +25,7 @@ defineProps({
 <template>
   <article class="project-card row" v-if="image.position === 'left'">
     <div class="project-card_image col-12 col-md-6">
-      <Image :alt="image.alt" :url="image.url" />
+      <Image :alt="image.alt" :url="image.url"/>
     </div>
     <div class="project-card_body col-12 col-md-6">
       <h3 class="project-card_body--title">{{ title }}</h3>
@@ -34,7 +34,12 @@ defineProps({
       <dl class="project-card_body__list row">
         <ListItem v-for="listItem in listItems" :label="listItem.label" :description="listItem.description"></ListItem>
       </dl>
-      <a href="#" class="btn btn-primary">Case study</a>
+      <div class="text-center dn-btn-wrapper">
+        <a href="#" class="dn-btn-outline-old-mauve">
+          Case study
+          <font-awesome-icon icon="fa-regular fa-circle-right"/>
+        </a>
+      </div>
     </div>
   </article>
 
@@ -46,13 +51,18 @@ defineProps({
       <dl class="project-card_body__list row">
         <ListItem v-for="listItem in listItems" :label="listItem.label" :description="listItem.description"></ListItem>
       </dl>
-      <a href="#" class="btn btn-primary">Case study</a>
+      <div class="text-center dn-btn-wrapper">
+        <a href="#" class="dn-btn-outline-old-mauve">
+          Case study
+          <font-awesome-icon icon="fa-regular fa-circle-right"/>
+        </a>
+      </div>
     </div>
     <div class="project-card_image col-12 col-md-6 order-1 order-md-2">
-      <Image :alt="image.alt" :url="image.url" />
+      <Image :alt="image.alt" :url="image.url"/>
     </div>
   </article>
-  <Separator />
+  <Separator/>
 </template>
 
 

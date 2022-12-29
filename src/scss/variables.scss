@@ -1,59 +1,81 @@
 $font-family-aqala-display: aqala-display, sans-serif;
-
-// navbar
-$nav-link-font-size: 2.5rem;
-//$nav-link-color:                    var(--#{$prefix}link-color) !default;
-//$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
-$navbar-padding-y: 0;
-$navbar-height: 45px;
-$navbar-background-color: rgba(194, 160, 172, 0.5);
+$font-family-svarga-regular: svarga-regular, sans-serif;
 
 // Headings
 $headings-font-family: $font-family-aqala-display;
 
-$h1-font-size:                4rem;
-$h2-font-size:                3.5rem;
-$h3-font-size:                2.5rem;
-$h4-font-size:                2rem;
-$h5-font-size:                1.8rem;
-$h6-font-size:                1.5rem;
-$lead-font-size:  1.8rem;
-
-
+$h1-font-size: 10rem;
+$h2-font-size: 6.25rem;
+$h3-font-size: 3.5rem;
+$h4-font-size: 2rem;
+$h5-font-size: 1.8rem;
+$h6-font-size: 1.5rem;
+$lead-font-size: 1.8rem;
 
 
 // Colors
-$color-1:    #D9FCC6;
-$color-2:    red;
-$color-3:    green;
-$color-4:    blue;
-//$indigo:  #6610f2 !default;
-//$purple:  #6f42c1 !default;
-//$pink:    #d63384 !default;
-//$red:     #dc3545 !default;
-//$orange:  #fd7e14 !default;
-//$yellow:  #ffc107 !default;
-//$green:   #198754 !default;
-//$teal:    #20c997 !default;
-//$cyan:    #0dcaf0 !default;
-// scss-docs-end color-variables
+//#11270B Phthalo Green
+//#326022 Mid-dark Green
+//#529938 May Green
+//#D9FCC6 Tea Green primary -------
+//#C2A0AC Tuscany Secondary --------
+//#916577 Mauve Taupe
+//#602941 Old Mauve
+//#C4C4C4 Mid-Grey
 
-// scss-docs-start colors-map
-$colors: (
-  "color-1":       $color-1,
+// First override some or all individual color variables
+$primary: #D9FCC6; //#D9FCC6 Tea Green
+$secondary: #C2A0AC; //#C2A0AC Tuscany
+$phthalo-green: #11270B;
+$mid-dark-green: #326022;
+$may-green: #529938;
+$mauve-taupe: #916577;
+$old-mauve: #602941;
+$mid-grey: #C4C4C4;
+
+// Then add them to your custom theme-colors map, together with any additional colors you might need
+$theme-colors: (
+        primary: $primary,
+        secondary: $secondary,
+        phthalo-green: $phthalo-green,
+        mid-dark-green: $mid-dark-green,
+        may-green: $may-green,
+        mauve-taupe: $mauve-taupe,
+        old-mauve: $old-mauve,
+        mid-grey: $mid-grey,
 );
-// scss-docs-end colors-map
 
-$hr-margin-y: 6rem;
-$hr-color: red;
+
+// navbar-link
+$nav-link-font-size: 2.5rem;
+$nav-link-padding-y: 0;
+
+// navbar
+$navbar-padding-y: 0;
+$navbar-height: 65px;
+$navbar-background-color: $secondary;
+
+// lead
+$lead-font-size: 3.75rem;
+
+
+// buttons
+//$btn-border-color: $old-mauve;
+$btn-border-width: 2px;
+//$input-btn-border-width: 2px;
+////$input-btn-border-width: 2px;
+$btn-border-radius: 25px;
+
+
+
+
+
+
+// Separator variables
+$section-separator: 6rem;
+$hr-margin-y: $section-separator;
+$hr-color: $may-green;
 $hr-opacity: 1;
-//$hr-border-width: 10px;
-  //margin: $hr-margin-y 0;
-  //color: $hr-color; // 1
-  //border: 0;
-  //border-top: $hr-border-width solid $hr-border-color;
-  //opacity: $hr-opacity;
-
 
 
 $grid-breakpoints: (
