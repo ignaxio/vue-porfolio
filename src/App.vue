@@ -42,7 +42,7 @@ const projectCards = [
 
 const footer = {
   image: {
-    url: "../../../assets/images/footer2500.jpg",
+    url: "/images/footer2500.jpg",
     alt: "Project image alt"
   }
 };
@@ -61,18 +61,19 @@ const footer = {
         </div>
       </div>
     </section>
-    <section class="container">
-      <h2 class="title-section text-old-mauve text-center">My work</h2>
-      <div class="row">
-        <div class="col-12">
-          <ProjectCard v-for="(projectCard, index)  in projectCards"
-                       :listItems="projectCard.listItems"
-                       :title="projectCard.title"
-                       :description="projectCard.description"
-                       :image="projectCard.image"/>
-        </div>
-      </div>
-    </section>
+
+<!--    <section class="container">-->
+<!--      <h2 class="title-section text-old-mauve text-center">My work</h2>-->
+<!--      <div class="row">-->
+<!--        <div class="col-12">-->
+<!--          <ProjectCard v-for="(projectCard, index)  in projectCards"-->
+<!--                       :listItems="projectCard.listItems"-->
+<!--                       :title="projectCard.title"-->
+<!--                       :description="projectCard.description"-->
+<!--                       :image="projectCard.image"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
 
   </main>
   <Footer :image="footer.image" title="Get in touch" email="DANA.C.HEIMANN@GMAIL.COM" phone="+34 658 68 86 37"/>
