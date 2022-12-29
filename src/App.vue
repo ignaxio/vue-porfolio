@@ -42,7 +42,7 @@ const projectCards = [
 
 const footer = {
   image: {
-    url: "/src/assets/images/footer2500.jpg",
+    url: "../../../assets/images/footer2500.jpg",
     alt: "Project image alt"
   }
 };

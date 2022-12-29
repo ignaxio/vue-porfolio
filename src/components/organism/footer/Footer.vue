@@ -39,7 +39,7 @@ defineProps({
         <font-awesome-icon icon="fa-brands fa-twitter" size="2x"/>
       </div>
       <div class="footer-logo">
-        <Image alt="Logo dana heimann" url="/src/assets/logo.svg"/>
+        <Image alt="Logo dana heimann" url="../../../assets/logo.svg"/>
       </div>
       <div class="footer-copyright">
         © DANA HEIMANN 2023
