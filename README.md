@@ -26,8 +26,9 @@ npm run dev
 
 ```sh
 npm run build
-
-We need to add dist folder and run 
+git add .
+git commit -m'production files added'
+git push origin main
 git subtree push --prefix dist origin gh-pages
 
 ```
