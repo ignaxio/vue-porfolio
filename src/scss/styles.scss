@@ -49,6 +49,9 @@ section {
 
 .intro-text-section {
   font-family: $font-family-svarga-regular;
-  font-size: 29px;
+  font-size: 1.5rem;
+  @include media-breakpoint-up(md) {
+        font-size: 1.8rem;
+      }
 }
 

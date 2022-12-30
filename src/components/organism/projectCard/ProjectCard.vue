@@ -62,6 +62,7 @@ defineProps({
       <Image :alt="image.alt" :url="image.url"/>
     </div>
   </article>
+  {{index}}
   <Separator/>
 </template>
 

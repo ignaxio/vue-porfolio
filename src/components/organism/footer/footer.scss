@@ -3,19 +3,28 @@
 
 footer {
   section {
-
+margin-block-end: 2rem;
     .footer-contact {
       font-family: $font-family-aqala-display;
-      font-size: 3rem;
+      font-size: 1.8rem;
       padding-block-end: 2rem;
+      @include media-breakpoint-up(md) {
+        font-size: 3rem;
+      }
     }
+
     .footer-copyright {
       color: $mid-dark-green;
-      font-size: 45px;
+      font-size: 1.8rem;
       font-family: $font-family-aqala-display;
+      @include media-breakpoint-up(md) {
+        font-size: 2.8rem;
+      }
     }
+
     .footer-logo {
       width: 150px;
+      padding-block: 1rem;
     }
   }
 }
