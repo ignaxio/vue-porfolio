@@ -144,13 +144,7 @@ const aboutSubTitle = "UX/UI & VISUAL DESIGNER";
 
     <section class="container dn-see-my-cv">
       <div class="text-center dn-btn-wrapper">
-        <a href="./src/assets/UX_UI_dana_heimann.pdf" class="dn-btn-outline-old-mauve">
-          See my CV
-          <font-awesome-icon icon="fa-regular fa-circle-right"/>
-        </a>
-      </div>
-      <div class="text-center dn-btn-wrapper">
-        <a href="/UX_UI_dana_heimann.pdf" class="dn-btn-outline-old-mauve">
+        <a href="./UX_UI_dana_heimann.pdf" class="dn-btn-outline-old-mauve">
           See my CV
           <font-awesome-icon icon="fa-regular fa-circle-right"/>
         </a>
