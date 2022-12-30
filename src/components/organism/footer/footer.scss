@@ -1,23 +1,30 @@
 @import "../../../scss/base-components";
 
-.masthead {
-  height: 100vh;
-  margin-top: -#{$navbar-height};
-  min-height: 500px;
-  background-image: url('/src/assets/images/HomepageHero.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  .container {
-    .row {
-      .col-12 {
-        color: #D9FCC6;
-        margin-bottom: 10px;
-        @include media-breakpoint-up(sm) {
-          margin-bottom: 60px;
-        }
+footer {
+  section {
+margin-block-end: 2rem;
+    .footer-contact {
+      font-family: $font-family-aqala-display;
+      font-size: 1.8rem;
+      padding-block-end: 2rem;
+      @include media-breakpoint-up(md) {
+        font-size: 3rem;
       }
+    }
+
+    .footer-copyright {
+      color: $mid-dark-green;
+      font-size: 1.8rem;
+      font-family: $font-family-aqala-display;
+      @include media-breakpoint-up(md) {
+        font-size: 2.8rem;
+      }
+    }
+
+    .footer-logo {
+      width: 150px;
+      padding-block: 1rem;
     }
   }
 }

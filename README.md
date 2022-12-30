@@ -1,4 +1,4 @@
-# vue-porfolio
+# vue-portfolio
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -26,4 +26,9 @@ npm run dev
 
 ```sh
 npm run build
+git add .
+git commit -m'production files added'
+git push origin main
+git subtree push --prefix dist origin gh-pages
+
 ```

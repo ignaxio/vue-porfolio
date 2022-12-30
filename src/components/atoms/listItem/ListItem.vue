@@ -14,8 +14,8 @@ defineProps({
 </script>
 
 <template>
-  <dt class="col-sm-3">{{ label }}</dt>
-  <dd class="col-sm-9">{{ description }}</dd>
+  <dt class="list-item-label col-sm-3">{{ label }}</dt>
+  <dd class="list-item-content col-sm-9">{{ description }}</dd>
 </template>
 
 

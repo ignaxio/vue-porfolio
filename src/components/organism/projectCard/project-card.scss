@@ -1,12 +1,8 @@
 @import "../../../scss/base-components";
 
 .project-card {
-  //&:not(:last-child) {
-  //  padding-block-end: 2rem;
-  //}
-
-
-  &:last-child + hr {
+  &:last-of-type + hr,
+  &:only-of-type + hr {
     display: none;
 }
 

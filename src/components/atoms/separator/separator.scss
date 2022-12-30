@@ -1,6 +1,8 @@
 @import "../../../scss/base-components";
 
 hr {
-  width: 10% !important;
-  margin-inline-start: 45% !important;
+  width: 45px;
+  margin-inline-start: 50% !important;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
 }

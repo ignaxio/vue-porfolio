@@ -1,7 +1,7 @@
 @import "../../../scss/base-components";
 
 .navbar {
-  background-color: $navbar-background-color;
+  //background-color: $navbar-background-color;
   height: $navbar-height;
   .container {
 
@@ -9,6 +9,9 @@
       li.nav-item {
           .nav-link {
             font-family: $font-family-aqala-display;
+            color: $primary;
+            display: inline-block;
+            padding-inline-start: 1.5rem;
           }
       }
     }

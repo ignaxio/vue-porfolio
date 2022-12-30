@@ -1,26 +1,19 @@
-
 <script setup>
 
 import './nav-bar.scss'
-import CLink from "../../atoms/cLink/CLink.vue";
-
-defineProps({
-  // title: {
-  //   type: String,
-  //   required: true
-  // }
-})
+// import CLink from "../../atoms/cLink/CLink.vue";
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar bg-secondary bg-opacity-75">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img alt="Dana logo" src="../../../assets/logo.svg" width="30" height="24" />
+        <img alt="Dana logo" src="../../../assets/logo.svg" width="55"/>
       </a>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <CLink classes="nav-link" href="about-me" linkText="About me" />
+          <router-link to="/" class="nav-link">Home</router-link>
+          <router-link to="/about" class="nav-link">About me</router-link>
         </li>
       </ul>
     </div>
