@@ -18,8 +18,17 @@ section {
   }
 }
 
-.h3, h3 {
+.h3, h3,
+.h4, h4 {
   font-family: $font-family-svarga-regular;
+}
+.h4, h4 {
+  text-transform: uppercase;
+}
+
+.h2, h2,
+.h3, h3 {
+  color: $old-mauve;
 }
 
 .dn-btn-wrapper {
@@ -42,16 +51,3 @@ section {
     }
   }
 }
-
-.lead {
-  font-family: $font-family-aqala-display;
-}
-
-.intro-text-section {
-  font-family: $font-family-svarga-regular;
-  font-size: 1.5rem;
-  @include media-breakpoint-up(md) {
-        font-size: 1.8rem;
-      }
-}
-

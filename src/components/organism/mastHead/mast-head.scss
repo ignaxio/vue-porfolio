@@ -21,14 +21,8 @@
         @include media-breakpoint-up(sm) {
           margin-bottom: 60px;
         }
-
-        h1 {
-          //font-size: 200px;
-          //font-weight: bold;
-        }
-
         .lead {
-          //font-size: 60px;
+          font-family: $font-family-aqala-display;
         }
       }
     }

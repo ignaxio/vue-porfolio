@@ -1,0 +1,93 @@
+@import "../scss/base-components";
+
+
+.header-about {
+  margin-top: -#{$navbar-height};
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+
+  &__image {
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+  }
+
+  &__text {
+    padding-block-start: 4rem;
+
+    h1 {
+      color: $old-mauve;
+      @include media-breakpoint-only(md) {
+        font-size: 5rem;
+      }
+
+    }
+
+    .lead {
+      font-size: 1.8rem;
+      color: $phthalo-green;
+      @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+      }
+    }
+
+    img {
+      max-width: 380px;
+    }
+  }
+}
+
+.dn-see-my-cv {
+  padding-block-end: 10rem;
+  .dn-btn-wrapper {
+    .dn-btn-outline-old-mauve {
+      font-size: 2.3rem;
+      @include media-breakpoint-up(sm) {
+      font-size: 3rem;
+    }
+      @include media-breakpoint-up(md) {
+      font-size: 4rem;
+    }
+    }
+  }
+}
+
+
+.dn-education {
+  font-family: $font-family-svarga-regular;
+  font-size: 1.5rem;
+
+  &-group {
+    padding-block-end: 2.5rem;
+  }
+}
+
+.dn-list-group-wrapper {
+  .dn-list-group {
+    font-family: $font-family-svarga-regular;
+    padding-block-end: 2rem;
+
+    &__title {
+      position: relative;
+      padding-block-end: 0.8rem;
+
+      &:after {
+        content: '';
+        display: block;
+        border-block-start: $may-green solid 1px;
+        width: 35px;
+      }
+    }
+
+    &__ul {
+      li {
+        font-size: 1.5rem;
+
+        &::marker {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
